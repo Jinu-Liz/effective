@@ -1,4 +1,4 @@
-package java.effective;
+package practice.effective;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

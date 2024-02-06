@@ -1,6 +1,6 @@
-package java.effective.chapter_01.item_01.before;
+package practice.effective.chapter_01.item_01.before;
 
-import java.effective.chapter_01.item_01.Product;
+import practice.effective.chapter_01.item_01.Product;
 
 public class Order {
 
