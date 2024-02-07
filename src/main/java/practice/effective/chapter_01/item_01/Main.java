@@ -27,5 +27,12 @@ public class Main {
      * (Flyweight 패턴)
      */
     Boolean.valueOf(false);
+
+    /**
+     * 인터페이스를 타입으로 사용하여, 해당 기능(프레임워크)을 사용하도록 강제할 수 있다.
+     * 또한 구체적인 타입(내용)을 숨길 수 있다.
+     */
+    HelloService ko = HelloServiceFactory.of("ko");
+    HelloService eng = HelloService.of("eng");
   }
 }
