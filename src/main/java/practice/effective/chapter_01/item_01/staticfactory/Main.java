@@ -1,9 +1,14 @@
-package practice.effective.chapter_01.item_01;
+package practice.effective.chapter_01.item_01.staticfactory;
 
-import practice.effective.ChineseHelloService;
-import practice.effective.chapter_01.item_01.after.AfterSettings;
-import practice.effective.chapter_01.item_01.before.Settings;
+import practice.effective.chapter_01.item_01.staticfactory.ChineseHelloService;
+import practice.effective.chapter_01.item_01.staticfactory.good.HelloService;
+import practice.effective.chapter_01.item_01.staticfactory.good.HelloServiceEx;
+import practice.effective.chapter_01.item_01.staticfactory.good.HelloServiceFactory;
+import practice.effective.chapter_01.item_01.staticfactory.good.after.AfterSettings;
+import practice.effective.chapter_01.item_01.staticfactory.good.before.Settings;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.ServiceLoader;
 
@@ -57,5 +62,12 @@ public class Main {
      */
     HelloServiceEx helloServiceEx = new ChineseHelloService();
     System.out.println(helloServiceEx.hello());
+
+    /**
+     * List의 경우, 생성자를 통해 사용할 수도 있고
+     * 정적 팩터리 메서드를 통해서 사용할 수도 있다.
+     */
+    List<String> list = new ArrayList<>();
+    List.of("jinuliz", "stich");
   }
 }

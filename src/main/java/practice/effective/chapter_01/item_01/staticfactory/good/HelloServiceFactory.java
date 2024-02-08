@@ -1,4 +1,4 @@
-package practice.effective.chapter_01.item_01;
+package practice.effective.chapter_01.item_01.staticfactory.good;
 
 /**
  * [ 생성자 대신 정적 팩터리를 사용했을 때의 장점 ]

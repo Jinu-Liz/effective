@@ -1,6 +1,6 @@
-package practice.effective.chapter_01.item_01.after;
+package practice.effective.chapter_01.item_01.staticfactory.good.after;
 
-import practice.effective.chapter_01.item_01.Product;
+import practice.effective.chapter_01.item_01.staticfactory.good.Product;
 
 public class Order {
 
