@@ -1,7 +1,11 @@
 package practice.effective.chapter_01.item_01;
 
+import practice.effective.ChineseHelloService;
 import practice.effective.chapter_01.item_01.after.AfterSettings;
 import practice.effective.chapter_01.item_01.before.Settings;
+
+import java.util.Optional;
+import java.util.ServiceLoader;
 
 public class Main {
   public static void main(String[] args) {
@@ -34,5 +38,24 @@ public class Main {
      */
     HelloService ko = HelloServiceFactory.of("ko");
     HelloService eng = HelloService.of("eng");
+
+
+    /**
+     * HelloServiceEx의 구현체로 등록되어있는 클래스들을 모두 찾는다.
+     * 인터페이스만 있어도 사용 가능하다. (정적 팩터리 메서드가 있는 상태에서, 구현체가 존재하지 않아도 된다.)
+     *
+     */
+    ServiceLoader<HelloServiceEx> loader = ServiceLoader.load(HelloServiceEx.class);
+    Optional<HelloServiceEx> helloServiceExOptional = loader.findFirst();
+    helloServiceExOptional.ifPresent(h -> {
+      System.out.println(h.hello());
+    });
+
+    /**
+     * 위 코드는 ChineseHelloService에 의존적이지 않지만, 아래 코드는 의존적이다.
+     * 따라서, 위의 코드는 구현체의 존재를 몰라도 되고 아래 코드는 구현체의 존재를 알아야 사용할 수 있는 코드이다.
+     */
+    HelloServiceEx helloServiceEx = new ChineseHelloService();
+    System.out.println(helloServiceEx.hello());
   }
 }
