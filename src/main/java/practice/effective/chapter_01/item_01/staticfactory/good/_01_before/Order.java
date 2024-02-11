@@ -1,4 +1,4 @@
-package practice.effective.chapter_01.item_01.staticfactory.good.before;
+package practice.effective.chapter_01.item_01.staticfactory.good._01_before;
 
 import practice.effective.chapter_01.item_01.staticfactory.good.Product;
 

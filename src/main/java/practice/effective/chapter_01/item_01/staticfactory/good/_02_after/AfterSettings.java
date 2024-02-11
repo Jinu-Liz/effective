@@ -1,6 +1,6 @@
-package practice.effective.chapter_01.item_01.staticfactory.good.after;
+package practice.effective.chapter_01.item_01.staticfactory.good._02_after;
 
-import practice.effective.chapter_01.item_01.staticfactory.good.before.Difficulty;
+import practice.effective.chapter_01.item_01.staticfactory.good._01_before.Difficulty;
 
 public class AfterSettings {
 

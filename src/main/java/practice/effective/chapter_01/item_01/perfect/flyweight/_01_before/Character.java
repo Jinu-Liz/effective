@@ -1,4 +1,4 @@
-package practice.effective.chapter_01.item_01.perfect.flyweight.after;
+package practice.effective.chapter_01.item_01.perfect.flyweight._01_before;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,6 +11,8 @@ public class Character {
 
   private String color;
 
-  private Font font;
+  private String fontFamily;
+
+  private int fontSize;
 
 }

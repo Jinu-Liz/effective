@@ -1,7 +1,7 @@
 package practice.effective.chapter_01.item_01.perfect.flyweight;
 
-import practice.effective.chapter_01.item_01.perfect.flyweight.after.Character;
-import practice.effective.chapter_01.item_01.perfect.flyweight.after.FontFactory;
+import practice.effective.chapter_01.item_01.perfect.flyweight._02_after.Character;
+import practice.effective.chapter_01.item_01.perfect.flyweight._02_after.FontFactory;
 
 public class Client {
   public static void main(String[] args) {

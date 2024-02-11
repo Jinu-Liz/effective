@@ -1,6 +1,6 @@
 package practice.effective.chapter_01.item_01.staticfactory.bad;
 
-import practice.effective.chapter_01.item_01.staticfactory.good.before.Difficulty;
+import practice.effective.chapter_01.item_01.staticfactory.good._01_before.Difficulty;
 
 /**
  * 이 클래스의 인스턴스는 #getInstance()를 통해 사용한다.
