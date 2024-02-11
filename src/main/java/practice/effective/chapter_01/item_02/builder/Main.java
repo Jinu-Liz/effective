@@ -12,6 +12,18 @@ public class Main {
     factsJavaBeans.setServing(80);
     factsJavaBeans.setCalories(100);
     factsJavaBeans.setFat(35);
-    factsJavaBeans.setFat(8);
+    factsJavaBeans.setSodium(8);
   }
+
+  NutrionFactsBuilder nutrionFactsBuilder = new NutrionFactsBuilder.Builder(240, 8)
+    .calories(100)
+    .sodium(35)
+    .carbohydrate(8)
+    .build();
+
+  NutrionFactsBuilderAnnotation nutrionFactsBuilderAnnotation = NutrionFactsBuilderAnnotation.builder()
+    .calories(100)
+    .sodium(35)
+    .carbohydrate(8)
+    .build();
 }
