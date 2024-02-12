@@ -2,6 +2,10 @@ package practice.effective.chapter_01.item_02.builder;
 
 public class Main {
   public static void main(String[] args) {
+
+    /**
+     * 일반적인 생성자 사용
+     */
     NutritionFacts nutritionFacts = new NutritionFacts(240, 80, 100, 35, 8);
 
     /**
