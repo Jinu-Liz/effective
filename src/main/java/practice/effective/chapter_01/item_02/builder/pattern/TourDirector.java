@@ -9,6 +9,9 @@ public class TourDirector {
 
   private TourPlanBuilder tourPlanBuilder;
 
+  /**
+   * Builder를 사용하여 Plan생성
+   */
   public TourPlan cancunTrip() {
     return tourPlanBuilder.title("칸쿤 여행")
       .nightsAndDays(2, 3)
