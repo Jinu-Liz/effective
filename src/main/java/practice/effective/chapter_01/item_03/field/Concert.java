@@ -10,9 +10,9 @@ public class Concert {
   @Getter
   private boolean mainStateOpen;
 
-  private Elvis elvis;
+  private IElvis elvis;
 
-  public Concert(Elvis elvis) {
+  public Concert(IElvis elvis) {
     this.elvis = elvis;
   }
 
