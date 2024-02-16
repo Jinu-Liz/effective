@@ -1,4 +1,4 @@
-package practice.effective.chapter_01.item_02.builder.javabeans;
+package practice.effective.chapter_01.item_02.perfect.javabeans;
 
 import lombok.Data;
 

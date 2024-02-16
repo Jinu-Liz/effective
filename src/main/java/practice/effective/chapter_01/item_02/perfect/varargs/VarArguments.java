@@ -1,4 +1,4 @@
-package practice.effective.chapter_01.item_02.builder.varargs;
+package practice.effective.chapter_01.item_02.perfect.varargs;
 
 import java.util.Arrays;
 

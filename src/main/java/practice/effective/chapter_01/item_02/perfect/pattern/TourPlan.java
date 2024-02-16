@@ -1,4 +1,4 @@
-package practice.effective.chapter_01.item_02.builder.pattern;
+package practice.effective.chapter_01.item_02.perfect.pattern;
 
 import lombok.Data;
 

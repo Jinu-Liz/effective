@@ -1,6 +1,6 @@
 package practice.effective.chapter_01.item_02.builder;
 
-import practice.effective.chapter_01.item_02.builder.javabeans.NutritionFactsJavaBeans;
+import practice.effective.chapter_01.item_02.perfect.javabeans.NutritionFactsJavaBeans;
 
 public class Main {
   public static void main(String[] args) {

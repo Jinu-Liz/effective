@@ -1,4 +1,4 @@
-package practice.effective.chapter_01.item_02.builder.illegalargumentexception;
+package practice.effective.chapter_01.item_02.perfect.illegalargumentexception;
 
 import java.time.LocalDate;
 
