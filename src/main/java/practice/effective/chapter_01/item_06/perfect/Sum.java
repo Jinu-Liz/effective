@@ -1,4 +1,4 @@
-package practice.effective.chapter_01.item_06;
+package practice.effective.chapter_01.item_06.perfect;
 
 public class Sum {
 
