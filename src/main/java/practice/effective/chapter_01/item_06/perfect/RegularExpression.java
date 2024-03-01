@@ -12,6 +12,8 @@ public class RegularExpression {
    *
    * 정규식을 사용하는 대표적인 메서드
    * split / replaceAll, replaceFirst / matches
+   *
+   * 해당 메서드 사용 시 참고하면 좋을 듯
    */
   public static void main(String[] args) {
     long start = System.nanoTime();
