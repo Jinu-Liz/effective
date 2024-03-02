@@ -18,6 +18,7 @@ class PostRepositoryTest {
     BeforePostRepository postRepository = new BeforePostRepository();
     Integer p1 = 1;
     Post postById = postRepository.getPostById(p1);
+    p1 = null;
 
     Assertions.assertFalse(postRepository.getCache().isEmpty());
 
@@ -30,11 +31,17 @@ class PostRepositoryTest {
     assertTrue(postRepository.getCache().isEmpty());
   }
 
+  /**
+   * Integer나 String 등의 경우, JVM 내부에 상수풀 같은 것으로 이미 캐싱이 되어있다.
+   * 때문에 null을 할당해도 GC의 대상이 되지 않는다.
+   * 그렇기에 Key 객체를 별도로 만들어 사용해야 한다.
+   */
   @Test
   void weakCache() throws InterruptedException {
     AfterPostRepository postRepository = new AfterPostRepository();
     CacheKey key = new CacheKey(1);
     Post postById = postRepository.getPostById(key);
+    key = null;
 
     Assertions.assertFalse(postRepository.getCache().isEmpty());
 
