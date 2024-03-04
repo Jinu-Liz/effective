@@ -1,18 +1,14 @@
-package practice.effective.chapter_01.item_08.tryfinally;
+package practice.effective.chapter_01.item_09.trywithresources;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class TopLine {
-
-  // try-finally는 더 이상 자원을 회수하는 최선의 방책이 아니다.
+  // try-with-resources : 자원을 회수하는 최선책.
   static String firstLineOfFile(String path) throws IOException {
-    BufferedReader br = new BufferedReader(new FileReader(path));
-    try {
+    try (BufferedReader br = new BufferedReader(new FileReader(path))) {
       return br.readLine();
-    } finally {
-      br.close();
     }
   }
 

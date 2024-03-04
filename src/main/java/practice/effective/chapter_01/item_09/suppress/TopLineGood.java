@@ -1,4 +1,4 @@
-package practice.effective.chapter_01.item_08.suppress;
+package practice.effective.chapter_01.item_09.suppress;
 
 import java.io.FileReader;
 import java.io.IOException;
