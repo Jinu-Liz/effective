@@ -1,4 +1,4 @@
-package practice.effective.chapter_02.item_10;
+package practice.effective.chapter_02.item_10.composition;
 
 // 단순한 불변 2차원 정수 점(point) 클래스
 public class Point {
