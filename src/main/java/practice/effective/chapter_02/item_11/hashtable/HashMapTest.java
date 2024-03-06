@@ -18,6 +18,9 @@ public class HashMapTest {
      * 여기에서 get을 하게 되면, LinkedList를 순회하며 각 객체마다 equals로 비교하여 맞는 값을 꺼내오게 된다.
      * hashCode를 통해 바로 값을 꺼내오는 HashMap을 쓰는 장점이 사라지고, List를 사용하는 것과 똑같이 된다.
      * 시간복잡도가 O1이 아니라 On이 되어버린다.
+     *
+     * 자바 8에서는 해시 충돌 시 성능 개선을 위해 동일한 버켓에 일정 개수 이상의 객체가 추가되면,
+     * 연결 리스트 대신 이진 트리를 사용하도록 바뀌었다.
      */
     System.out.println(phoneNumber1.equals(phoneNumber2));
     System.out.println(phoneNumber1.hashCode());
