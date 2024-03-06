@@ -24,6 +24,10 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 
+	// https://mvnrepository.com/artifact/com.google.guava/guava
+	implementation 'com.google.guava:guava:33.0.0-jre'
+
+
 	// https://mvnrepository.com/artifact/com.google.auto.value/auto-value-annotations
 	compileOnly 'com.google.auto.value:auto-value-annotations:1.10.4'
 
