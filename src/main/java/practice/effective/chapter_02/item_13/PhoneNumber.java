@@ -13,6 +13,19 @@ public final class PhoneNumber {
     this.lineNum = rangeCheck(lineNum, 9999, "line num");
   }
 
+  /**
+   * 생성자를 사용하면 객체를 생성한다는 게 명확하다.
+   * 또한 필드의 final 규약을 그대로 유지할 수 있다.
+   *
+   * 또한 상위 타입이 있는 경우, 상위 타입에 해당하는 모든 인스턴스들을 받아서
+   * 원하는 타입으로 변환시키는 것이 가능하다.
+   * 이는 clone으로는 불가능하다.
+   * 예시) HashSet -> TreeSet으로 변환
+   */
+  public PhoneNumber(PhoneNumber phoneNumber) {
+    this(phoneNumber.areaCode, phoneNumber.prefix, phoneNumber.lineNum);
+  }
+
   private static short rangeCheck(int val, int max, String arg) {
     if (val < 0 || val > max) throw new IllegalArgumentException(arg + " : " + val);
 

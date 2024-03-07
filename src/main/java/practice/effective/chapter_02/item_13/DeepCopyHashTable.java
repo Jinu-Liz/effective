@@ -49,6 +49,7 @@ public class DeepCopyHashTable implements Cloneable {
     try {
       result = (DeepCopyHashTable) super.clone();
       result.buckets = new Entry[this.buckets.length];    // 새 배열을 직접 만들어준다.
+//      result.buckets = createNewBuckets();
       for (int i = 0; i < this.buckets.length; i++) {
         if (buckets[i] != null) result.buckets[i] = this.buckets[i].deepCopy();
       }
@@ -57,6 +58,14 @@ public class DeepCopyHashTable implements Cloneable {
     } catch (CloneNotSupportedException e) {
       throw new AssertionError();
     }
+  }
+
+  /**
+   * 객체를 생성하는 과정에 끼어드는 메서드는 지양하는 것이 좋다.
+   * 하위 클래스에서 재정의할 수 있기 때문이다.
+   */
+  protected Entry[] createNewBuckets() {
+    throw new AssertionError();
   }
 
   public static void main(String[] args) {
