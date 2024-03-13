@@ -1,0 +1,4 @@
+--patch-module
+me.service.name=_
+--add-reads
+me.service.name=ALL-UNNAMED
