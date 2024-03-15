@@ -35,6 +35,14 @@ public class Complex {
     return this.im;
   }
 
+  /**
+   * 유일한 단점은, 값을 변경하기 위해서는
+   * 새로운 객체를 만들어야한다.
+   * 비용이 큰 객체인 경우 성능 저하를 야기할 수 있다.
+   *
+   * 따라서 새로운 객체를 생성하는 여러 메서드를
+   * 하나로 모아서 처리함으로써 이를 어느 정도 방지할 수 있다.
+   */
   public Complex plus(Complex c) {
     return new Complex(re + c.re, im + c.im);
   }
