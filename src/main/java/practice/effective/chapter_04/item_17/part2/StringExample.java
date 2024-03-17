@@ -1,4 +1,4 @@
-package practice.effective.chapter_04.item_17;
+package practice.effective.chapter_04.item_17.part2;
 
 public class StringExample {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package practice.effective.chapter_04.item_17;
+package practice.effective.chapter_04.item_17.part1;
 
 /**
  * public 메서드를 이용하면 부가적인 작업이 가능하다.

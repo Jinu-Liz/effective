@@ -1,4 +1,6 @@
-package practice.effective.chapter_04.item_17;
+package practice.effective.chapter_04.item_17.part2;
+
+import practice.effective.chapter_04.item_17.part1.Point;
 
 import java.math.BigInteger;
 import java.util.HashSet;

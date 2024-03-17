@@ -1,4 +1,4 @@
-package practice.effective.chapter_04.item_17;
+package practice.effective.chapter_04.item_17.part1;
 
 /**
  * PhoneNumber 객체에서 변경을 막아놓았지만,

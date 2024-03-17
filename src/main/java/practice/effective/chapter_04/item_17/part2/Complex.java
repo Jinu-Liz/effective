@@ -1,4 +1,4 @@
-package practice.effective.chapter_04.item_17.complex;
+package practice.effective.chapter_04.item_17.part2;
 
 /**
  * 불변 클래스의 경우, 매개변수로 받은 값이 변하지 않기 때문에
