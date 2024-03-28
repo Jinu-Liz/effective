@@ -1,4 +1,4 @@
-package practice.effective.chapter_04.item_26.term;
+package practice.effective.chapter_04.item_26.terms;
 
 import java.util.ArrayList;
 import java.util.List;
