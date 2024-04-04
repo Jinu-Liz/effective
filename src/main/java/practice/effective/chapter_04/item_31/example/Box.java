@@ -5,9 +5,13 @@ import lombok.ToString;
 @ToString
 public class Box<T extends Comparable<T>> implements Comparable<Box<T>> {
 
-  private final T value;
+  protected T value;
 
   public Box(T value) {
+    this.value = value;
+  }
+
+  public void change(T value) {
     this.value = value;
   }
 
