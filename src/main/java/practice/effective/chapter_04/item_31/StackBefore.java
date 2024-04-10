@@ -60,11 +60,11 @@ public class StackBefore<E> {
   }
 
   public static void main(String[] args) {
-    StackBefore<Number> numberStack = new StackBefore<>();
-    Iterable<Integer> integers = Arrays.asList(3, 1, 4, 1, 5, 9);
-    numberStack.pushAll(integers);    // Number 타입이기 때문에 에러가 발생한다.
-
-    Collection<Object> objects = new ArrayList<>();
-    numberStack.popAll(objects);    // Number 타입이기 때문에 에러가 발생한다.
+//    StackBefore<Number> numberStack = new StackBefore<>();
+//    Iterable<Integer> integers = Arrays.asList(3, 1, 4, 1, 5, 9);
+//    numberStack.pushAll(integers);    // Number 타입이기 때문에 에러가 발생한다.
+//
+//    Collection<Object> objects = new ArrayList<>();
+//    numberStack.popAll(objects);    // Number 타입이기 때문에 에러가 발생한다.
   }
 }
